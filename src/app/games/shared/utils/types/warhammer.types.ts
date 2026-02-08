@@ -3,7 +3,7 @@ export type PersonagemId =
   | 'grodnar'
   | 'konrad'
   | 'jehan'
-  | 'helbert'
+  | 'helvert'
   | 'sarah'
   | 'solacruz'
   | 'rocco';
