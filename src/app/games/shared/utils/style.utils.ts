@@ -1,30 +1,20 @@
-import { Posicao } from "../models/posicao.model";
-import { WarhammerConstants } from "./constants/warhammer.constants";
-import { PersonagemId } from "./types/warhammer.types";
+import { Posicao } from '../models/posicao.model';
+import { WarhammerConstants } from './constants/warhammer.constants';
+import { PersonagemId } from './types/warhammer.types';
 
 type StyleMap = Partial<Record<PersonagemId, { [k: string]: string }>>;
 
 export class StyleUtils {
-
-  static aplicarPosicoes(ids: PersonagemId[]): StyleMap {
+  public static aplicarPosicoes(ids: PersonagemId[]): StyleMap {
     const vw = window.innerWidth;
     const vh = window.innerHeight;
     const tipoLayout = this.getTipo(vh);
     const styles: StyleMap = {};
     ids.forEach((id) => {
       if (tipoLayout === 'flex' && WarhammerConstants.POSICOES.flex[id]) {
-        styles[id] = this.aplicarFlex(
-          WarhammerConstants.POSICOES.flex[id],
-          vw,
-          vh
-        );
+        styles[id] = this.aplicarFlex(WarhammerConstants.POSICOES.flex[id], vw, vh);
       } else if (WarhammerConstants.POSICOES.pixel[id]) {
-        styles[id] = this.aplicarPixel(
-          WarhammerConstants.POSICOES.pixel[id],
-          vw,
-          vh,
-          tipoLayout
-        );
+        styles[id] = this.aplicarPixel(WarhammerConstants.POSICOES.pixel[id], vw, vh, tipoLayout);
       }
     });
 
@@ -50,7 +40,7 @@ export class StyleUtils {
     p: Posicao,
     vw: number,
     vh: number,
-    tipo: 'flex' | 'intermediario' | 'menor'
+    tipo: 'flex' | 'intermediario' | 'menor',
   ) {
     const escalaW = vw / WarhammerConstants.CONFIG.tela.larguraBase;
     let top = p.top!;

@@ -10,27 +10,22 @@ import { PersonagemId } from '../shared/utils/types/warhammer.types';
   templateUrl: './warhammer.html',
   styleUrl: './warhammer.css',
 })
-export class Warhammer implements OnInit{
-  ngOnInit(): void {
-    this.atualizarPosicoes();
-  }
+export class Warhammer implements OnInit {
   public personagens: PersonagemId[] = WarhammerConstants.THUMBS as PersonagemId[];
   public personagemAtivo: string = '';
-
-  styles: Partial<Record<PersonagemId, any>> = {};
-
-  atualizarPosicoes() {
-    debugger
-    this.styles = StyleUtils.aplicarPosicoes(this.personagens);
-  }
+  public styles: Partial<Record<PersonagemId, any>> = {};
 
   @HostListener('window:resize')
-  onResize() {
+  public ngOnInit(): void {
     this.atualizarPosicoes();
   }
 
   public selecionarPersonagem(personagem: string): void {
     this.personagemAtivo = personagem;
     console.log(this.personagemAtivo);
+  }
+
+  private atualizarPosicoes(): void {
+    this.styles = StyleUtils.aplicarPosicoes(this.personagens);
   }
 }
