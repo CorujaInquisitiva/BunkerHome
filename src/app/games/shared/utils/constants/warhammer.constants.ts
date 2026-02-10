@@ -1,7 +1,7 @@
-import { Posicao } from '../games.utils';
+import { Posicao } from '../../models/posicao.model';
 import { PersonagemId } from '../types/warhammer.types';
 
-export class AppConstants {
+export class WarhammerConstants {
   static readonly CONFIG = {
     tela: {
       min: 600,

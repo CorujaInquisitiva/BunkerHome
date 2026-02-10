@@ -1,6 +1,5 @@
 <main>
   @for (personagem of personagens; track personagem) {
-    <img [src]="`assets/warhammer/personagens/${personagem}.png`" class="thumb" />
+    <img (click)="selecionarPersonagem(personagem)" [ngStyle]="styles[personagem]" [src]="`assets/warhammer/personagens/${personagem}.png`" class="thumb" />
   } @empty {}
-  <!-- (click)="selecionar(p)" -->
 </main>
