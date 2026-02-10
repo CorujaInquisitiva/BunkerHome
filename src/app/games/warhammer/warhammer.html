@@ -1,4 +1,5 @@
 <main>
+  <montes-view [showMontes]="!personagemAtivo"></montes-view>
   @for (personagem of personagens; track personagem) {
     <img (click)="selecionarPersonagem(personagem)" [ngStyle]="styles[personagem]" [src]="`assets/warhammer/personagens/${personagem}.png`" class="thumb" />
   } @empty {}

@@ -1,0 +1,24 @@
+.monte {
+  position: absolute;
+  bottom: 0;
+  width: 45vw;
+  height: auto;
+  z-index: 20;
+  pointer-events: none;
+  transition: transform 0.6s ease;
+  transform: translateX(0);
+}
+
+.monte.out {
+  transform: translateX(var(--direcao));
+}
+
+.monte-direito {
+  right: 0;
+  --direcao: 110%;
+}
+
+.monte-esquerdo {
+  left: 0;
+  --direcao: -110%;
+}

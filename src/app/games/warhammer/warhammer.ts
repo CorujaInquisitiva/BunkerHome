@@ -3,10 +3,11 @@ import { Component, HostListener, OnInit } from '@angular/core';
 import { WarhammerConstants } from '../shared/utils/constants/warhammer.constants';
 import { StyleUtils } from '../shared/utils/style.utils';
 import { PersonagemId } from '../shared/utils/types/warhammer.types';
+import { Montes } from './montes/montes';
 
 @Component({
   selector: 'warhammer-home',
-  imports: [CommonModule],
+  imports: [CommonModule, Montes],
   templateUrl: './warhammer.html',
   styleUrl: './warhammer.css',
 })
