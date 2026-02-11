@@ -1,0 +1,10 @@
+<div id="menu">
+  @for (item of menuItems; track item.id; let isLast = $last) {
+    <a [href]="item.link" target="_blank">
+      <img [src]="item.icon" class="icon-menu" />
+    </a>
+    @if (!isLast) {
+      <p>•</p>
+    }
+  }
+</div>
