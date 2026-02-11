@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'menu-view',
@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './menu.css',
 })
 export class Menu {
+  @Input() showMenu: boolean = true;
   menuItems = [
     { id: 'blog', icon: 'assets/warhammer/menu/Blog.png', link: 'https://blog.1nodado.com.br/' },
     { id: 'foundry', icon: 'assets/warhammer/menu/Foundry.png', link: 'https://foundry.1nodado.com.br/join' },

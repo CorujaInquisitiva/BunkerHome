@@ -1,4 +1,4 @@
-<div id="menu">
+<div id="menu" [class.up]="!showMenu">
   @for (item of menuItems; track item.id; let isLast = $last) {
     <a [href]="item.link" target="_blank">
       <img [src]="item.icon" class="icon-menu" />
