@@ -4,8 +4,9 @@
   <montes-view [showMontes]="!personagemAtivo"></montes-view>
   @for (personagem of personagens; track personagem) {
   <img (click)="selecionarPersonagem(personagem)" [class.fade-out]="personagemAtivo && personagemAtivo !== personagem"
-    [class.fade-in]="!personagemAtivo || personagemAtivo === personagem" [ngStyle]="styles[personagem]"
-    [src]="`assets/warhammer/personagens/${personagem}.png`" [id]="personagem" class="thumb" />
+    [class.fade-in]="!personagemAtivo || personagemAtivo === personagem" [class.ativo]="personagemAtivo == personagem"
+    [ngStyle]="styles[personagem]" [src]="`assets/warhammer/personagens/${personagem}.png`" [id]="personagem"
+    class="thumb" />
   } @empty {}
   <info-page [personagemAtivo]="personagemAtivo"></info-page>
 </main>

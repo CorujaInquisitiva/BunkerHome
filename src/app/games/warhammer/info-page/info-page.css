@@ -31,12 +31,6 @@
   text-align: center;
   gap: 20px;
 }
-#info-thumb.esquerdo {
-  left: 8vw;
-}
-#info-thumb.direito {
-  right: 8vw;
-}
 #info-thumb.in {
   pointer-events: auto;
   opacity: 1;
@@ -76,9 +70,4 @@
 }
 #info-char p {
   font-size: 1em;
-}
-
-.d-none{
-  display: none;
-  opacity: 0;
 }

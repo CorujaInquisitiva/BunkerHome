@@ -38,6 +38,14 @@ main {
 .thumb:hover {
   transform: scale(1.1);
 }
+.thumb.ativo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 60;
+  transform: translate(0, 0) scale(1);
+  transition: transform var(--move-duration, 0.7s) linear, opacity 0.3s ease;
+}
 
 .fade-out {
   opacity: 0;
