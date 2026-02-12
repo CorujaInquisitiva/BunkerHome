@@ -5,10 +5,11 @@ import { StyleUtils } from '../shared/utils/style.utils';
 import { PersonagemId } from '../shared/utils/types/warhammer.types';
 import { Montes } from './montes/montes';
 import { Menu } from './menu/menu';
+import { InfoPage } from './info-page/info-page';
 
 @Component({
   selector: 'warhammer-home',
-  imports: [CommonModule, Montes, Menu],
+  imports: [CommonModule, Montes, Menu, InfoPage],
   templateUrl: './warhammer.html',
   styleUrl: './warhammer.css',
 })

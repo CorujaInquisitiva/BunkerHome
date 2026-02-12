@@ -7,4 +7,5 @@
     [class.fade-in]="!personagemAtivo || personagemAtivo === personagem" [ngStyle]="styles[personagem]"
     [src]="`assets/warhammer/personagens/${personagem}.png`" class="thumb" />
   } @empty {}
+  <info-page [personagemAtivo]="personagemAtivo"></info-page>
 </main>
