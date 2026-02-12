@@ -1,11 +1,12 @@
+import { NgClass } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { WarhammerConstants } from '../../shared/utils/constants/warhammer.constants';
 import { PersonagemId } from '../../shared/utils/types/warhammer.types';
-import { NgClass } from "../../../../../node_modules/@angular/common/types/_common_module-chunk";
 
 @Component({
   selector: 'info-page',
-  imports: [],
+  standalone: true,
+  imports: [NgClass],
   templateUrl: './info-page.html',
   styleUrl: './info-page.css',
 })
@@ -17,5 +18,8 @@ export class InfoPage {
   }
   get infoText(): string {
     return WarhammerConstants.INFO[this.personagemAtivo as PersonagemId] + '<br><br><br>';
+  }
+  get textPosition(): string{
+    return WarhammerConstants.POSICOES.charPosition[this.personagemAtivo as PersonagemId] === 'direito' ? 'esquerdo' : 'direito';
   }
 }
