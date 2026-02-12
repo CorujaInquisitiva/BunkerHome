@@ -24,7 +24,10 @@ export class Warhammer implements OnInit {
 
   public selecionarPersonagem(personagem: string): void {
     this.personagemAtivo = personagem;
-    console.log(this.personagemAtivo);
+  }
+
+  public voltar(): void{
+    this.personagemAtivo = '';
   }
 
   private atualizarPosicoes(): void {

@@ -1,4 +1,5 @@
 <main>
+  <img (click)="voltar()" [class.in]="personagemAtivo" src="assets/warhammer/voltar.svg" class="voltar" id="voltar">
   <menu-view [showMenu]="!personagemAtivo"></menu-view>
   <montes-view [showMontes]="!personagemAtivo"></montes-view>
   @for (personagem of personagens; track personagem) {

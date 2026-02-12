@@ -5,6 +5,27 @@ main {
   background-repeat: no-repeat;
 }
 
+.voltar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  padding: 40px 80px;
+  z-index: 40;
+  cursor: pointer;
+  transform: translateX(-120%);
+  transition:
+    transform 0.6s ease,
+    opacity 0.4s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+.voltar.in {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .thumb {
   cursor: pointer;
   position: relative;
@@ -14,7 +35,6 @@ main {
     opacity 0.4s ease,
     transform 0.2s ease;
 }
-
 .thumb:hover {
   transform: scale(1.1);
 }
@@ -23,7 +43,6 @@ main {
   opacity: 0;
   pointer-events: none;
 }
-
 .fade-in {
   opacity: 1;
 }
