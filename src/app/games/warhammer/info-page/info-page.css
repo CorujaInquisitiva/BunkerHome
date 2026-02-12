@@ -12,3 +12,73 @@
   filter: blur(3px) brightness(0.85);
   opacity: 1;
 }
+
+#info-thumb {
+  position: absolute;
+  top: 15vh;
+  width: 55vw;
+  z-index: 35;
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
+  pointer-events: none;
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  gap: 20px;
+}
+#info-thumb.esquerdo {
+  left: 8vw;
+}
+#info-thumb.direito {
+  right: 8vw;
+}
+#info-thumb.in {
+  pointer-events: auto;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#title {
+  height: 120px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#title img,
+#title svg {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+#info-char {
+  font-family: "MedievalSharp", cursive;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #f5e6c8;
+  max-width: 90%;
+  height: 50vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+}
+#info-char::-webkit-scrollbar {
+  display: none;
+}
+#info-char p {
+  font-size: 1em;
+}
+
+.d-none{
+  display: none;
+  opacity: 0;
+}

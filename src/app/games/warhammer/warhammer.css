@@ -46,3 +46,8 @@ main {
 .fade-in {
   opacity: 1;
 }
+
+#sarah,
+#jehan {
+  z-index: 30 !important;
+}

@@ -1,2 +1,5 @@
-<div class="box" [style.background-image]="backgroundUrl" [class.ativo]="personagemAtivo">
+<div id="info-thumb" [class.in]="personagemAtivo" [class.d-none]="!personagemAtivo">
+  <img [class.d-none]="!personagemAtivo" [src]="`assets/warhammer/titulos/${personagemAtivo}.svg`" id="title">
+  <p [class.d-none]="!personagemAtivo" id="info-char" [innerHTML]="infoText"></p>
 </div>
+<div class="box" [style.background-image]="backgroundUrl" [class.ativo]="personagemAtivo"></div>
