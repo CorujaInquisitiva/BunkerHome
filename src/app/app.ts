@@ -2,6 +2,7 @@ import { Component, OnInit, signal } from '@angular/core';
 import { GAMES_COMPONENTS } from './games/games-standalone';
 import { FoundryStatusService } from './games/shared/services/FoundryService.service';
 import { FoundryStatus } from './games/shared/models/foundry.model';
+import { SistemaEnum } from './shared/utils/enums/sistemas.enums';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +13,7 @@ import { FoundryStatus } from './games/shared/models/foundry.model';
 export class App implements OnInit {
   constructor(readonly service: FoundryStatusService) {}
   public sistemaAtual: string = '';
+  public sistemas = SistemaEnum;
   ngOnInit(): void {
     this.service.getStatus().subscribe({
       next: (response: FoundryStatus) => {
