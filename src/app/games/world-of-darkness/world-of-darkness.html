@@ -1,1 +1,13 @@
-<main></main>
+<main>
+<div class="fila-personagens">
+  @for (personagem of personagens; track personagem) {
+    <img
+      [id]="personagem"
+      [src]="getImagem(personagem)"
+      class="personagem-img"
+    />
+  } @empty {}
+</div>
+
+
+</main>

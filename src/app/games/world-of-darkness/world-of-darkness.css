@@ -4,3 +4,27 @@ main {
   background-position: center;
   background-repeat: no-repeat;
 }
+.fila-personagens {
+  max-width: 80%;
+  display: flex;
+  gap: 0.3%;
+  justify-content: space-between;
+  position: relative;
+  top: 25%
+}
+.personagem-img {
+  height: 55vh;
+  width: auto;
+  transition:
+    opacity 0.12s ease-in-out,
+    transform 0.4s ease;
+}
+.personagem-img:hover {
+  transform: scale(1.1);
+}
+#celine {
+  opacity: 0.1;
+}
+#celine:hover {
+  opacity: 1;
+}
