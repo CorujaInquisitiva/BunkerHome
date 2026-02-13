@@ -5,6 +5,8 @@
       [id]="personagem"
       [src]="getImagem(personagem)"
       class="personagem-img"
+      (mouseenter)="getHover(personagem, false)"
+      (mouseleave)="getHover(personagem, true)"
     />
   } @empty {}
 </div>

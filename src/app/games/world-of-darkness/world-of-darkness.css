@@ -7,12 +7,12 @@ main {
 .fila-personagens {
   max-width: 80%;
   display: flex;
-  gap: 0.3%;
   justify-content: space-between;
   position: relative;
-  top: 25%
+  top: 25%;
 }
 .personagem-img {
+  cursor: pointer;
   height: 55vh;
   width: auto;
   transition:
