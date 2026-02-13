@@ -17,18 +17,21 @@ export class Warhammer implements OnInit {
   public personagens: PersonagemId[] = WarhammerConstants.THUMBS as PersonagemId[];
   public personagemAtivo: string = '';
   public styles: Partial<Record<PersonagemId, any>> = {};
-
-  @HostListener('window:resize')
-  public ngOnInit(): void {
-    this.atualizarPosicoes();
-  }
+  public ladoAtivo: 'esquerdo' | 'direito' | '' = '';
 
   public selecionarPersonagem(personagem: string): void {
     this.personagemAtivo = personagem;
+    const lado = WarhammerConstants.POSICOES.charPosition[personagem as PersonagemId] || 'direito';
+    this.ladoAtivo = lado;
   }
 
-  public voltar(): void{
+  public voltar(): void {
     this.personagemAtivo = '';
+    this.ladoAtivo = '';
+  }
+  @HostListener('window:resize')
+  public ngOnInit(): void {
+    this.atualizarPosicoes();
   }
 
   private atualizarPosicoes(): void {
