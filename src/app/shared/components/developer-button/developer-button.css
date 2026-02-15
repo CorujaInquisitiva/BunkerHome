@@ -1,0 +1,20 @@
+.floating-credit {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0.20;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: "MedievalSharp", cursive;
+  font-size: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  z-index: 9999;
+}
+.floating-credit:hover {
+  opacity: 1;
+  background-color: #555;
+  transform: translateY(-3px);
+}

@@ -1,7 +1,7 @@
 import { Component, OnInit, signal } from '@angular/core';
 import { GAMES_COMPONENTS } from './games/games-standalone';
-import { FoundryStatusService } from './games/shared/services/FoundryService.service';
 import { FoundryStatus } from './games/shared/models/foundry.model';
+import { FoundryStatusService } from './games/shared/services/FoundryService.service';
 import { SistemaEnum } from './shared/utils/enums/sistemas.enums';
 
 @Component({
