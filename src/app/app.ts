@@ -12,7 +12,7 @@ import { SistemaEnum } from './shared/utils/enums/sistemas.enums';
 })
 export class App implements OnInit {
   constructor(readonly service: FoundryStatusService) {}
-  public sistemaAtual: string = '';
+  public sistemaAtual: string = SistemaEnum.WFRP4E;
   public sistemas = SistemaEnum;
   ngOnInit(): void {
     this.service.getStatus().subscribe({
