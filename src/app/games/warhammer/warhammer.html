@@ -3,14 +3,14 @@
   <menu-view [showMenu]="!personagemAtivo"></menu-view>
   <montes-view [showMontes]="!personagemAtivo"></montes-view>
   @for (personagem of personagens; track personagem) {
-  <img (click)="selecionarPersonagem(personagem)"
-    [class.thumb-ativo]="personagemAtivo === personagem"
+  <img (click)="selecionarPersonagem(personagem)" [class.thumb-ativo]="personagemAtivo === personagem"
     [class.thumb-direito]="personagemAtivo === personagem && ladoAtivo === 'direito'"
     [class.thumb-esquerdo]="personagemAtivo === personagem && ladoAtivo === 'esquerdo'"
     [class.fade-out]="personagemAtivo && personagemAtivo !== personagem"
-    [class.fade-in]="!personagemAtivo || personagemAtivo === personagem"
-    [ngStyle]="styles[personagem]"
+    [class.fade-in]="!personagemAtivo || personagemAtivo === personagem" [ngStyle]="styles[personagem]"
     [src]="`assets/warhammer/personagens/${personagem}.png`" [id]="personagem" class="thumb" />
   } @empty {}
+  @if(personagemAtivo){
   <info-page [personagemAtivo]="personagemAtivo"></info-page>
+  }
 </main>

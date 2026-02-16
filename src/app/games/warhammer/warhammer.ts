@@ -15,7 +15,7 @@ import { InfoPage } from './info-page/info-page';
 })
 export class Warhammer implements OnInit {
   public personagens: PersonagemId[] = WarhammerConstants.THUMBS as PersonagemId[];
-  public personagemAtivo: string = '';
+  public personagemAtivo?: string;
   public styles: Partial<Record<PersonagemId, any>> = {};
   public ladoAtivo: 'esquerdo' | 'direito' | '' = '';
 
