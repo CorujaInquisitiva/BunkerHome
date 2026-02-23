@@ -1,0 +1,60 @@
+.layer {
+  background-image: url(../../../../../public/assets/vampire/fundos/notredame.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 80vw;
+  height: 90vh;
+  margin: 0px;
+  overflow: hidden;
+}
+.fila-personagens {
+  max-width: 80%;
+  display: flex;
+  position: relative;
+  top: 25%;
+}
+.personagem-img {
+  z-index: 5;
+  cursor: pointer;
+  position: absolute;
+  height: 55vh;
+  width: auto;
+  transition:
+    opacity 0.12s ease-in-out,
+    transform 0.4s ease;
+}
+.personagem-img:hover {
+  transform: scale(1.1);
+}
+#celine {
+  opacity: 0.4;
+  left: 8%;
+}
+#celine:hover {
+  opacity: 1;
+}
+#helene {
+  z-index: 6;
+  left: 16%;
+}
+#hernan {
+  left: 34%;
+}
+#jean {
+  z-index: 4;
+  left: 48%;
+}
+#baldwin {
+  left: 76%;
+}
+#elias {
+  z-index: 6;
+  left: 64%;
+}
+#khaled {
+  left: 92%;
+}
+#philipe {
+  left: 100%;
+}

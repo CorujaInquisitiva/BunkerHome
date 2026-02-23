@@ -1,0 +1,7 @@
+<div class="layer">
+  <div class="fila-personagens">
+    @for (personagem of personagens; track personagem) {
+    <img [id]="personagem" [src]="`assets/vampire/personagens/${personagem}.png`" class="personagem-img" />
+    } @empty {}
+  </div>
+</div>

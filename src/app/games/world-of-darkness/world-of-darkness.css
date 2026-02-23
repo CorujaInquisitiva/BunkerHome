@@ -1,57 +1,24 @@
-main {
-  background-image: url(../../../../public/assets/vampire/fundos/notredame.png);
+.layer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.moldura {
+  position: absolute;
+  inset: 0; /* ocupa toda a layer */
+  background-image: url(../../../../public/assets/vampire/fundos/moldura.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-.fila-personagens {
-  max-width: 80%;
-  display: flex;
-  position: relative;
-  top: 25%;
-}
-.personagem-img {
-  z-index: 5;
-  cursor: pointer;
-  position: absolute;
-  height: 55vh;
-  width: auto;
-  transition:
-    opacity 0.12s ease-in-out,
-    transform 0.4s ease;
-}
-.personagem-img:hover {
-  transform: scale(1.1);
-}
-#celine {
-  opacity: 0.4;
-  left: 8%;
-}
-#celine:hover {
-  opacity: 1;
-}
-#helene {
-  z-index: 6;
-  left: 16%;
-}
-#hernan {
-  left: 34%;
-}
-#jean {
-  z-index: 4;
-  left: 48%;
-}
-#baldwin {
-  left: 76%;
+  pointer-events: none; /* importante! */
+  z-index: 2;
 }
 
-#elias {
-  z-index: 6;
-  left: 64%;
-}
-#khaled {
-  left: 92%;
-}
-#philipe {
-  left: 100%;
+pintura-view {
+  position: relative;
+  z-index: 1;
 }

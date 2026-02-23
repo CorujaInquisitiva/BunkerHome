@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { WorldOfDarknessConstants } from '../shared/utils/constants/world-of-darkness.constants';
 import { PersonagemId } from '../shared/utils/types/world-of-darkness.type';
 import { WorldOfDarknessEnum } from '../shared/utils/enums/world-of-darkness.enum';
+import { Pintura } from './pintura/pintura';
 
 @Component({
   selector: 'world-of-darkness-home',
-  imports: [],
+  imports: [Pintura],
   templateUrl: './world-of-darkness.html',
   styleUrl: './world-of-darkness.css',
 })
