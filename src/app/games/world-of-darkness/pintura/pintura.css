@@ -42,19 +42,19 @@
   left: 34%;
 }
 #jean {
-  z-index: 4;
   left: 48%;
-}
-#baldwin {
-  left: 76%;
 }
 #elias {
   z-index: 6;
-  left: 64%;
+  left: 66%;
+}
+#baldwin {
+  left: 76%;
 }
 #khaled {
   left: 92%;
 }
 #philipe {
   left: 100%;
+  z-index: 4;
 }
