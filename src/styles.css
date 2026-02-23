@@ -12,7 +12,11 @@ body {
 .direito {
   right: 8vw;
 }
-.d-none{
+.d-none {
   display: none;
   opacity: 0;
+}
+menu-view {
+  position: absolute;
+  width: stretch;
 }
