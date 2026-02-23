@@ -1,6 +1,5 @@
 #menu {
   position: fixed;
-  top: 0;
   left: 50%;
   transform: translateX(-50%);
 
@@ -18,7 +17,7 @@
 }
 @media (min-height: 601px) {
   #menu {
-    padding-top: 12%;
+    padding-top: 8%;
   }
 }
 #menu p {
