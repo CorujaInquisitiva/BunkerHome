@@ -3,13 +3,9 @@
   @for (personagem of personagens; track personagem) {
     <img
       [id]="personagem"
-      [src]="getImagem(personagem)"
+      [src]="`assets/vampire/personagens/${personagem}.png`"
       class="personagem-img"
-      (mouseenter)="getHover(personagem, false)"
-      (mouseleave)="getHover(personagem, true)"
     />
   } @empty {}
 </div>
-
-
 </main>

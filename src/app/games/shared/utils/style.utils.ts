@@ -1,4 +1,5 @@
 import { Posicao } from '../models/posicao.model';
+import { CommonConstants } from './constants/common.constants';
 import { WarhammerConstants } from './constants/warhammer.constants';
 import { PersonagemId } from './types/warhammer.types';
 
@@ -17,13 +18,12 @@ export class StyleUtils {
         styles[id] = this.aplicarPixel(WarhammerConstants.POSICOES.pixel[id], vw, vh, tipoLayout);
       }
     });
-
     return styles;
   }
 
   private static getTipo(vh: number): 'flex' | 'intermediario' | 'menor' {
-    if (vh > WarhammerConstants.CONFIG.tela.max) return 'flex';
-    if (vh >= WarhammerConstants.CONFIG.tela.min) return 'intermediario';
+    if (vh > CommonConstants.CONFIG.tela.max) return 'flex';
+    if (vh >= CommonConstants.CONFIG.tela.min) return 'intermediario';
     return 'menor';
   }
 
@@ -42,11 +42,11 @@ export class StyleUtils {
     vh: number,
     tipo: 'flex' | 'intermediario' | 'menor',
   ) {
-    const escalaW = vw / WarhammerConstants.CONFIG.tela.larguraBase;
+    const escalaW = vw / CommonConstants.CONFIG.tela.larguraBase;
     let top = p.top!;
     let left = p.left! * escalaW;
-    if (tipo === 'intermediario') top += vh - WarhammerConstants.CONFIG.tela.min;
-    if (tipo === 'menor') top *= vh / WarhammerConstants.CONFIG.tela.min;
+    if (tipo === 'intermediario') top += vh - CommonConstants.CONFIG.tela.min;
+    if (tipo === 'menor') top *= vh / CommonConstants.CONFIG.tela.min;
     return {
       position: 'absolute',
       top: top + 'px',

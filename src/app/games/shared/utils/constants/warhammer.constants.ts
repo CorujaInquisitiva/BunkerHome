@@ -2,17 +2,6 @@ import { Posicao } from '../../models/posicao.model';
 import { PersonagemId } from '../types/warhammer.types';
 
 export class WarhammerConstants {
-  static readonly CONFIG = {
-    tela: {
-      min: 600,
-      max: 1080,
-      larguraBase: 1366,
-    },
-    animacao: {
-      duracao: 350,
-    },
-  };
-
   static readonly THUMBS: string[] = [
     'konrad',
     'grodnar',
