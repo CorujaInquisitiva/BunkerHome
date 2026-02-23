@@ -1,8 +1,5 @@
 #menu {
   position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-
   width: 100%;
 
   padding-top: 30px;
@@ -35,6 +32,6 @@
 }
 
 #menu.up {
-  transform: translateY(-150%);
+  transform: translateY(-100%);
   opacity: 0;
 }
