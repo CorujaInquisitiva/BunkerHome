@@ -1,4 +1,8 @@
-<div class="layer">
+
+<div class="layer" [class.inativa]="personagemSelecionado">
   <pintura-view (personagemAtivoChange)="onPersonagemSelecionado($event)"></pintura-view>
-  <div class="moldura"></div>
+  <div [class.inativa]="personagemSelecionado" class="moldura"></div>
 </div>
+
+
+<cartas [personagemAtivo]="personagemSelecionado"></cartas>

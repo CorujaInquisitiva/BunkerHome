@@ -1,0 +1,16 @@
+.box {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 100;
+  display: block;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.box.ativo {
+  opacity: 1;
+}

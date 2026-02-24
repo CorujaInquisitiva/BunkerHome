@@ -5,9 +5,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+.inativa{
+    opacity: 0;
 }
 
 .moldura {
+  opacity: 1;
   position: absolute;
   inset: 0; /* ocupa toda a layer */
   background-image: url(../../../../public/assets/vampire/fundos/moldura.png);
@@ -16,6 +22,7 @@
   background-repeat: no-repeat;
   pointer-events: none; /* importante! */
   z-index: 2;
+  transition: opacity 0.4s ease;
 }
 
 pintura-view {
