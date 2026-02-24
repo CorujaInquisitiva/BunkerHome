@@ -1,7 +1,7 @@
 export type PersonagemId =
   | 'celine'
   | 'jean'
-  | 'heleneveu'
+  | 'helene'
   | 'hernan'
   | 'khaled'
   | 'elias'

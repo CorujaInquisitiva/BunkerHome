@@ -2,7 +2,7 @@
   <menu-view></menu-view>
   <div class="fila-personagens">
     @for (personagem of personagens; track personagem) {
-    <img [id]="personagem" [src]="`assets/vampire/personagens/${personagem}.png`" class="personagem-img" />
+    <img (click)="selecionarPersonagem(personagem)" [id]="personagem" [src]="`assets/vampire/personagens/${personagem}.png`" class="personagem-img" />
     } @empty {}
   </div>
 </div>
