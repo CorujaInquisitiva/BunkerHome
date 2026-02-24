@@ -15,9 +15,10 @@ export class WorldOfDarkness {
   public personagens: PersonagemId[] = WorldOfDarknessConstants.THUMBS as PersonagemId[];
   public personagensEnum = WorldOfDarknessEnum;
   public personagemSelecionado?: string;
-
-  onPersonagemSelecionado(personagem: string) {
+  public voltar(): void {
+    this.personagemSelecionado = '';
+  }
+  public onPersonagemSelecionado(personagem: string) {
     this.personagemSelecionado = personagem;
-    console.log(this.personagemSelecionado)
   }
 }

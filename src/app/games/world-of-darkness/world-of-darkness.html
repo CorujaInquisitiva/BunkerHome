@@ -1,8 +1,6 @@
-
+<img (click)="voltar()" [class.in]="personagemSelecionado" src="assets/warhammer/voltar.svg" class="voltar" id="voltar">
 <div class="layer" [class.inativa]="personagemSelecionado">
   <pintura-view (personagemAtivoChange)="onPersonagemSelecionado($event)"></pintura-view>
   <div [class.inativa]="personagemSelecionado" class="moldura"></div>
 </div>
-
-
 <cartas [personagemAtivo]="personagemSelecionado"></cartas>
