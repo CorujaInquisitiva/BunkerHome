@@ -1,5 +1,5 @@
 <developer-button></developer-button>
-<menu-view [showMenu]="!personagemAtivo"></menu-view>
+<menu-view [showMenu]="!personagemAtivo" [style]="menuStyle"></menu-view>
 @if (sistemaAtual() === sistemas.WFRP4E) {
   <warhammer-home (personagemAtivoChange)="onPersonagemChange($event)"></warhammer-home>
 }
