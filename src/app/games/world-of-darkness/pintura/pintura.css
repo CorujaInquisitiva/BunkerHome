@@ -19,7 +19,7 @@
   z-index: 5;
   cursor: pointer;
   position: absolute;
-  height: 55vh;
+  height: 50vh;
   width: auto;
   transition:
     opacity 0.12s ease-in-out,
