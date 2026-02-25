@@ -14,6 +14,7 @@
   position: relative;
   top: 25%;
 }
+
 .personagem-img {
   z-index: 5;
   cursor: pointer;
@@ -27,6 +28,12 @@
 .personagem-img:hover {
   transform: scale(1.1);
 }
+@media (min-height: 601px) {
+  .personagem-img {
+    height: 45vh;
+  }
+}
+
 #celine {
   opacity: 0.4;
   left: 8%;
