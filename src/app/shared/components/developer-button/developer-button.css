@@ -11,7 +11,7 @@
   font-size: 14px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
-  z-index: 9999;
+  z-index: 9;
 }
 .floating-credit:hover {
   opacity: 1;

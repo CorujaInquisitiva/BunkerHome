@@ -9,7 +9,7 @@ main {
   cursor: pointer;
   position: absolute;
   width: auto;
-  z-index: 5;
+  z-index: 2;
   transition:
     opacity 0.4s ease, left 0.4s ease, right 0.4s ease, transform 0.4s ease;
 }
@@ -43,5 +43,5 @@ main {
 
 #sarah,
 #jehan {
-  z-index: 30 !important;
+  z-index: 4 !important;
 }

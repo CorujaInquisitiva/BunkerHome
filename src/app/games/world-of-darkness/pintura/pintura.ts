@@ -1,12 +1,11 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-import { PersonagemId } from '../../shared/utils/types/world-of-darkness.type';
-import { WorldOfDarknessEnum } from '../../shared/utils/enums/world-of-darkness.enum';
 import { WorldOfDarknessConstants } from '../../shared/utils/constants/world-of-darkness.constants';
-import { Menu } from '../../shared/components/menu/menu';
+import { WorldOfDarknessEnum } from '../../shared/utils/enums/world-of-darkness.enum';
+import { PersonagemId } from '../../shared/utils/types/world-of-darkness.type';
 
 @Component({
   selector: 'pintura-view',
-  imports: [Menu],
+  imports: [],
   templateUrl: './pintura.html',
   styleUrl: './pintura.css',
 })

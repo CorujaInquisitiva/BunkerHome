@@ -1,8 +1,8 @@
 <developer-button></developer-button>
-
+<menu-view [showMenu]="!personagemAtivo"></menu-view>
 @if (sistemaAtual() === sistemas.WFRP4E) {
-  <warhammer-home></warhammer-home>
+  <warhammer-home (personagemAtivoChange)="onPersonagemChange($event)"></warhammer-home>
 }
 @else if (sistemaAtual() === sistemas.WORLD_OF_DARKNESS) {
-  <world-of-darkness-home></world-of-darkness-home>
+  <world-of-darkness-home (personagemAtivoChange)="onPersonagemChange($event)"></world-of-darkness-home>
 }

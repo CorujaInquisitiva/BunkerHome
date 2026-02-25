@@ -1,4 +1,4 @@
-import { Component, OnInit, signal } from '@angular/core';
+import { Component, OnInit, output, signal } from '@angular/core';
 import { GAMES_COMPONENTS } from './games/games-standalone';
 import { FoundryStatus } from './games/shared/models/foundry.model';
 import { FoundryStatusService } from './games/shared/services/FoundryService.service';
@@ -13,6 +13,13 @@ import { SistemaEnum } from './shared/utils/enums/sistemas.enums';
 export class App implements OnInit {
 
   constructor(readonly service: FoundryStatusService) {}
+
+  personagemAtivo?: string | null = undefined;
+
+  onPersonagemChange(personagem: any) {
+    console.log(this.personagemAtivo);
+    this.personagemAtivo = personagem;
+  }
 
   sistemaAtual = signal<string | null>(null);
 

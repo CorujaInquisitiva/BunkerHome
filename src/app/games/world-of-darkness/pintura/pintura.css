@@ -16,7 +16,7 @@
 }
 
 .personagem-img {
-  z-index: 5;
+  z-index: 3;
   cursor: pointer;
   position: absolute;
   height: 50vh;
@@ -42,7 +42,7 @@
   opacity: 1;
 }
 #helene {
-  z-index: 6;
+  z-index: 4;
   left: 16%;
 }
 #hernan {
@@ -52,7 +52,7 @@
   left: 48%;
 }
 #elias {
-  z-index: 6;
+  z-index: 4;
   left: 66%;
 }
 #baldwin {
@@ -63,5 +63,4 @@
 }
 #philipe {
   left: 100%;
-  z-index: 4;
 }
