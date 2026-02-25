@@ -11,18 +11,21 @@ import { SistemaEnum } from './shared/utils/enums/sistemas.enums';
   styleUrl: './app.css',
 })
 export class App implements OnInit {
+
   constructor(readonly service: FoundryStatusService) {}
-  public sistemaAtual: string = SistemaEnum.WFRP4E;
-  public sistemas = SistemaEnum;
+
+  sistemaAtual = signal<string | null>(null);
+
+  sistemas = SistemaEnum;
+
   ngOnInit(): void {
     this.service.getStatus().subscribe({
       next: (response: FoundryStatus) => {
-        this.sistemaAtual = response.system;
+        this.sistemaAtual.set(response.system);
       },
       error: (err: any) => {
-        console.error('Erro ao buscar status:', err);
+        console.error(err);
       },
     });
   }
-  protected readonly title = signal(this.sistemaAtual === 'wfrp4e' ? 'Warhammer: Velho Mundo' : 'Vampiro: Dark Ages');
 }

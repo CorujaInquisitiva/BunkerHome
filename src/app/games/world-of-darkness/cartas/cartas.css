@@ -8,9 +8,44 @@
   display: block;
   position: absolute;
   top: 0;
+}
+
+.box-container {
   opacity: 0;
   transition: opacity 0.4s ease;
 }
-.box.ativo {
+.box-container.ativo {
   opacity: 1;
+}
+
+.text-container {
+  font-family: 'MedievalSharp', cursive;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #f5e6c8;
+  position: absolute;
+  height: 40vh;
+  left: 50%;
+  width: 45%;
+  transform: translateX(-50%);
+  z-index: 35;
+  padding: 10px;
+  top: 50%;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+}
+.text-container::-webkit-scrollbar {
+  display: none;
+}
+.text-container p {
+  font-size: 1em;
+}
+@media (min-height: 601px) {
+  .text-container {
+    top: 40%;
+    height: 45vh;
+  }
 }

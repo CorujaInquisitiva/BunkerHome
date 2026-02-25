@@ -1,1 +1,8 @@
-<img [src]="personagemAtivo ? 'assets/vampire/fundos/' + personagemAtivo + '.png' : null" [class.ativo]="personagemAtivo" class="box">
+<div class="box-container" [class.ativo]="personagemAtivo">
+  <div class="text-container">
+    @if(personagemAtivo){
+    <p [innerHTML]="infoText"></p>
+    }
+  </div>
+  <img [src]="personagemAtivo ? 'assets/vampire/fundos/' + personagemAtivo + '.png' : null" class="box">
+</div>
