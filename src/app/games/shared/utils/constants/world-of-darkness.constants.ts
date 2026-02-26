@@ -73,7 +73,47 @@ Sirvo à Noite como outrora servi à Cruz — não por cegueira, mas por escolha
 E escolha, mais do que herança, é o que define um homem.
     `,
     helene: ``,
-    baldwin: ``,
+    baldwin: `
+Meu nome é Baldwin de Vaux.<br><br>
+Nasci sob o sino de uma pequena igreja às margens do Sena, no ano de Nosso Senhor de 1215. Segundo filho. Destinado ao altar… mas forjado para a espada.
+<br><br>
+Aos dezesseis anos fiz votos que julgava eternos. Vesti o manto da Ordem e marchei para o Oriente. Lutei na poeira da Terra Santa, não por glória, mas por devoção. Acreditava que cada golpe desferido era uma oração em aço.
+<br><br>
+Aprendi a manter a linha.
+Aprendi a não recuar.
+Aprendi que a fé pode sustentar um homem mesmo quando o corpo falha.
+<br><br>
+Falhei apenas uma vez.
+<br><br>
+Em uma estrada próxima a Jerusalém, vi meu mentor — Sir Roland de Beaumont — tombar sob lâmina estrangeira. Eu estava vivo. Ele não. Essa diferença pesa mais que qualquer armadura que já carreguei.
+<br><br>
+Deveria ter morrido ali também.
+<br><br>
+Não morri.
+<br><br>
+Fui arrancado da morte por mãos que não servem ao sol. Despertei em uma capela abandonada, com o gosto do sangue ainda fresco na boca e a certeza de que Deus havia silenciado diante de mim.
+<br><br>
+Desde então, caminho na noite.
+<br><br>
+Habito uma abadia em ruínas na Borgonha. Reconstruo suas paredes como quem tenta reconstruir a própria alma. Rezo. Jejuo. Luto contra a sede. Protejo viajantes nas estradas quando posso. E quando não posso… peço perdão.
+<br><br>
+Há algo em mim que exige comando. Voz firme. Postura ereta. Outros escutam quando falo — mesmo quando não elevo o tom. Não busco isso, mas ele me segue como sombra. Fui treinado para obedecer… e descobri que nasci para ordenar.
+<br><br>
+Ainda escuto Roland.
+Às vezes como um irmão que me chama à redenção.
+Às vezes como um juiz que me acusa de traição.
+<br><br>
+Não sei se é espírito ou culpa.
+<br><br>
+Se sou prova da ira divina, aceito-a.
+Se sou instrumento de um propósito maior, que Ele me use.
+Se sou maldito… então lutarei contra a própria maldição até o último suspiro que me restar.
+<br><br>
+Não sou o homem que fui.
+Mas tampouco me entreguei àquilo que me tornei.
+<br><br>
+Enquanto houver fé — mesmo que sussurrada na escuridão — eu permanecerei de pé.
+`,
     jean: ``,
     hernan: ``,
     khaled: ``,
